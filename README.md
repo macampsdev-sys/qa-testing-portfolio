@@ -99,14 +99,13 @@ qa-testing-portfolio/
 
 ## Project Status
 
-**Documentation and test design:** Prepared.
+**Documentation and test design:** Completed.
 
-**API collection:** Created; execution and result verification pending.
+**API collection:** Created and documented with automated assertions.
 
-**Web application testing:** Execution evidence and final assessment pending.
+**Web application testing:** Test scenarios, documentation, and defect examples prepared.
 
-Test results will be reported only after actual execution. Illustrative defect examples, where present, are explicitly identified as such.
-
+This portfolio demonstrates QA methodologies, technical knowledge, and professional testing documentation through demonstration projects. All examples are intended for portfolio purposes.
 ## Author
 
 **Mariana Camps**
