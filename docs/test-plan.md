@@ -1,32 +1,32 @@
-
 # Test Plan – SauceDemo E-commerce Application
 
 **Project:** QA Engineering Portfolio  
 **Author:** Mariana Camps  
 **Testing Approach:** Manual Functional Testing  
 **Application Under Test:** https://www.saucedemo.com/  
-**Document Version:** 1.1  
-**Status:** Planned
+**Document Version:** 1.2  
+**Status:** Portfolio Demonstration
 
 ---
 
 ## 1. Introduction
 
-This document defines the testing strategy, scope, resources, methodology and execution criteria for the Quality Assurance assessment of the SauceDemo e-commerce application.
+This document defines the testing strategy, scope, methodology, risks, and quality assessment criteria for a demonstration-based QA project focused on the SauceDemo e-commerce application.
 
-The objective is to evaluate critical user workflows, identify functional inconsistencies, assess application behavior and document findings through a structured QA process.
+The objective is to showcase structured test planning, risk-based analysis, functional test design, and defect management practices through a realistic e-commerce application scenario.
 
 ## 2. Testing Objectives
 
-- Validate core business workflows.
-- Verify authentication and authorization behavior at the application level.
-- Assess product inventory and sorting functionality.
-- Validate shopping cart operations.
-- Verify checkout workflows and input validation.
-- Identify functional, usability and consistency issues.
-- Assess error handling and user feedback.
-- Maintain traceability between requirements, test cases and defects.
-- Provide an objective assessment of application quality.
+- Define a structured approach to functional testing.
+- Identify critical business workflows.
+- Design positive and negative test scenarios.
+- Assess authentication and application-level access behavior.
+- Define validation criteria for product inventory and sorting functionality.
+- Design test scenarios for shopping cart operations.
+- Define checkout workflow and input validation scenarios.
+- Identify potential functional, usability, and consistency issues.
+- Establish requirements traceability.
+- Define defect classification and reporting standards.
 
 ## 3. Scope
 
@@ -52,31 +52,31 @@ The objective is to evaluate critical user workflows, identify functional incons
 
 ## 4. Testing Strategy
 
-The project follows a risk-based manual testing approach.
+The proposed testing strategy follows a risk-based manual testing approach.
 
-Testing activities will prioritize critical user journeys and functionality that directly impacts the shopping experience.
+Test design prioritizes critical user journeys and functionality that directly impacts the shopping experience.
 
 ### Testing Types
 
 | Testing Type | Purpose |
 |---|---|
-| Functional Testing | Verify expected application behavior |
-| Positive Testing | Validate successful user interactions |
-| Negative Testing | Evaluate invalid inputs and error handling |
-| Boundary Value Analysis | Assess input limits and edge conditions |
-| Exploratory Testing | Identify unexpected behavior |
-| Regression Testing | Verify existing functionality after changes |
-| Usability Testing | Assess navigation and user experience |
+| Functional Testing | Define checks for expected application behavior |
+| Positive Testing | Cover successful user interactions |
+| Negative Testing | Address invalid inputs and error handling |
+| Boundary Value Analysis | Identify input limits and edge conditions |
+| Exploratory Testing | Explore potential unexpected behavior |
+| Regression Testing | Define critical functionality for future regression checks |
+| Usability Testing | Assess navigation and user experience criteria |
 
 ## 5. Risk Assessment
 
 | Risk | Impact | Mitigation |
 |---|---|---|
-| Application availability issues | High | Record environment interruptions |
-| Demo environment changes | Medium | Document execution date and conditions |
-| Inconsistent application behavior | High | Repeat tests and preserve evidence |
-| Limited backend access | Medium | Restrict conclusions to observable behavior |
-| Incomplete test coverage | High | Maintain test case traceability |
+| Application availability issues | High | Consider environment availability as a project constraint |
+| Demo environment changes | Medium | Reference the public demo environment and its limitations |
+| Inconsistent application behavior | High | Define clear expected results and defect reporting criteria |
+| Limited backend access | Medium | Restrict the testing scope to observable application behavior |
+| Incomplete test coverage | High | Use requirements traceability and risk-based test design |
 
 ## 6. Test Environment
 
@@ -86,55 +86,61 @@ Testing activities will prioritize critical user journeys and functionality that
 | Environment | Public demo |
 | Operating System | Windows |
 | Browser | Google Chrome |
-| Testing Approach | Manual |
+| Testing Approach | Manual test design |
 | Documentation | Markdown |
 | Version Control | GitHub |
 
-Exact browser and operating system versions will be recorded during test execution.
+The environment configuration represents the intended context for the demonstration scenarios and does not constitute a record of test execution.
 
 ## 7. Test Data Management
 
-Test data will use publicly provided demo accounts and non-sensitive sample information.
+Test scenarios use publicly provided demo accounts and non-sensitive sample information.
 
-Credentials will be documented separately from production or personal credentials.
+Credentials are treated as test data and must not be confused with production or personal credentials.
 
-Test data must not contain real personal or financial information.
+Test data examples must not contain real personal or financial information.
 
-## 8. Entry Criteria
+## 8. Test Design Criteria
 
-Testing may begin when:
+Test scenarios are designed considering:
 
-- The application is accessible.
-- The testing environment is available.
-- Test scenarios have been reviewed.
-- Valid test credentials are available.
-- Expected results have been defined.
+- Business-critical user journeys.
+- Positive and negative input conditions.
+- Equivalence partitioning.
+- Boundary value analysis.
+- Expected application behavior.
+- Requirements traceability.
+- Risk and business impact.
 
-## 9. Exit Criteria
+Each test case should include a unique identifier, objective, preconditions, test steps, expected result, priority, and associated requirement.
 
-Testing may be considered complete when:
+## 9. Requirements Traceability
 
-- Planned test cases have been executed or formally marked as blocked.
-- Actual results have been documented.
-- Identified defects have been recorded.
-- Critical findings have been reviewed.
-- Relevant evidence has been collected.
-- A final QA report has been prepared.
+Requirements and test scenarios are organized to establish traceability between application functionality and the corresponding test cases.
+
+The traceability matrix supports:
+
+- Identification of covered functional requirements.
+- Detection of potential coverage gaps.
+- Organization of test scenarios by application module.
+- Association between requirements and potential defects.
 
 ## 10. Defect Management
 
-All identified defects must include:
+Potential defects identified through the demonstration scenarios are documented using a structured reporting approach.
+
+Each defect report should include:
 
 - Unique defect ID.
 - Summary and description.
 - Preconditions.
 - Steps to reproduce.
 - Expected result.
-- Actual result.
+- Actual result, when verified.
 - Severity.
 - Priority.
-- Execution environment.
-- Supporting evidence.
+- Environment details.
+- Supporting evidence, when available.
 
 ### Severity Classification
 
@@ -156,9 +162,11 @@ All identified defects must include:
 
 Severity measures impact. Priority determines urgency.
 
-## 11. Test Execution Management
+Illustrative defect examples are identified as portfolio examples and are not presented as verified application findings.
 
-Each test case will be assigned an execution status:
+## 11. Test Case Documentation
+
+Test cases are organized using the following status values:
 
 - NOT EXECUTED
 - PASSED
@@ -166,43 +174,42 @@ Each test case will be assigned an execution status:
 - BLOCKED
 - NOT APPLICABLE
 
-Failed test cases must be linked to their corresponding defect reports whenever applicable.
+These values define the available test case status model. This portfolio demonstrates test design and documentation rather than executed test results.
 
-Execution evidence will be stored in the repository.
+## 12. Quality Assessment Criteria
 
-## 12. Suspension and Resumption Criteria
+The proposed quality assessment considers:
 
-Testing may be suspended when:
+- Coverage of critical application workflows.
+- Clarity and completeness of test scenarios.
+- Traceability between requirements and test cases.
+- Consistency of expected results.
+- Defect reporting structure.
+- Identification of testing limitations and risks.
 
-- The application becomes unavailable.
-- A critical issue prevents further execution.
-- The testing environment becomes unreliable.
-- Test data is no longer valid.
+The assessment framework provides a basis for evaluating the quality of the test design documentation.
 
-Testing may resume once the blocking condition has been resolved and the environment has been validated.
+## 13. Project Deliverables
 
-## 13. Deliverables
-
-- Test Strategy and Test Plan.
-- Test Case Documentation.
-- Test Execution Results.
-- Defect Reports.
-- API Testing Collection.
-- SQL Validation Scripts.
-- Evidence and Supporting Documentation.
-- Final QA Assessment Report.
+- Test Plan and Testing Strategy.
+- Functional Test Case Documentation.
+- Requirements Traceability Matrix.
+- Defect Reporting Templates and Illustrative Examples.
+- QA Quality Assessment Framework.
+- API Testing Collection and Configuration.
+- Supporting Technical Documentation.
 
 ## 14. Limitations
 
-- Testing is limited to the publicly accessible demo environment.
+- The project uses a publicly accessible demo application.
 - No access to application source code or backend infrastructure is assumed.
-- Results represent the observed behavior during the documented execution period.
-- Findings must not be generalized to production environments.
+- Test scenarios and defect examples are intended for portfolio demonstration.
+- No executed test results or verified application defects are claimed.
+- Findings from a demo environment must not be generalized to production environments.
 
-## 15. Approval and Document Status
+## 15. Document Status
 
-**Document Status:** Planned – Pending Test Execution.
+**Document Status:** Completed – Portfolio Demonstration.
 
 **Author:** Mariana Camps  
 **Professional Focus:** Manual QA | API Testing | Software Quality
-
