@@ -1,26 +1,25 @@
-
-# QA Final Report – SauceDemo E-commerce Application
+# QA Quality Assessment – SauceDemo E-commerce Application
 
 **Project:** QA Engineering Portfolio  
 **Author:** Mariana Camps  
 **Application:** https://www.saucedemo.com/  
-**Document Version:** 1.0  
-**Report Type:** Quality Assurance Assessment  
-**Status:** Pending Test Execution
+**Document Version:** 1.1  
+**Report Type:** QA Quality Assessment Framework  
+**Status:** Portfolio Demonstration
 
 ---
 
 ## 1. Executive Summary
 
-This report defines the structure and evaluation criteria for communicating the results of the QA assessment performed on the SauceDemo e-commerce application.
+This document presents a quality assessment framework developed as part of a demonstration-based QA portfolio focused on the SauceDemo e-commerce application.
 
-The assessment focuses on functional workflows, application behavior, defect identification and overall quality observations.
+The assessment organizes functional quality criteria, testing scope, risk considerations, and potential improvement areas.
 
-Final quality conclusions will be established after test execution and evidence review.
+Its purpose is to demonstrate how QA documentation can support systematic quality analysis, requirements coverage, and structured reporting.
 
 ## 2. Assessment Scope
 
-The assessment covers the following functional areas:
+The quality assessment framework covers the following functional areas:
 
 - Authentication.
 - Product inventory.
@@ -29,9 +28,9 @@ The assessment covers the following functional areas:
 - Order summary.
 - Application navigation.
 
-Testing activities include manual functional, negative, exploratory and regression testing.
+The proposed testing approach considers functional, positive, negative, exploratory, and regression testing methodologies.
 
-## 3. Testing Environment
+## 3. Reference Environment
 
 | Component | Configuration |
 |---|---|
@@ -39,99 +38,89 @@ Testing activities include manual functional, negative, exploratory and regressi
 | Environment | Public demonstration |
 | Operating System | Windows |
 | Browser | Google Chrome |
-| Testing Approach | Manual |
+| Testing Approach | Manual test design |
 | Documentation | GitHub |
 
-Exact browser and operating system versions should be recorded during execution.
+The environment represents the reference context for the portfolio scenarios and is not an execution record.
 
-## 4. Test Execution Summary
+## 4. Test Design Summary
 
-The following metrics will be populated after test execution.
+The functional test design includes:
 
-| Metric | Result |
+| Metric | Value |
 |---|---:|
-| Total Test Cases | 18 |
-| Passed | Pending |
-| Failed | Pending |
-| Blocked | Pending |
-| Not Executed | 18 |
-| Pass Rate | Pending |
+| Total Test Cases Designed | 18 |
+| Functional Modules Covered | 4 |
+| Requirements Documented | 4 |
+| Priority Levels Defined | P1, P2 |
 
-### Pass Rate Calculation
+These values describe documentation coverage and do not represent test execution results.
 
-Pass Rate = (Passed Test Cases / Executed Test Cases) × 100
+## 5. Defect Management Framework
 
-Blocked and not applicable cases must be reported separately and excluded from the executed test case denominator.
+The portfolio includes a structured defect reporting model based on:
 
-## 5. Defect Summary
+- Severity classification.
+- Priority assignment.
+- Defect lifecycle management.
+- Reproduction steps.
+- Expected and actual results.
+- Requirements and test case traceability.
 
-| Severity | Identified Defects |
-|---|---:|
-| Critical | Pending |
-| High | Pending |
-| Medium | Pending |
-| Low | Pending |
-| Total | Pending |
-
-Only confirmed and documented defects should be included in this section.
+Illustrative defect examples are included to demonstrate reporting standards. They are not verified application defects.
 
 ## 6. Quality Assessment Criteria
 
-The application quality assessment will consider:
+The proposed assessment considers the following quality dimensions:
 
-- Functional correctness.
-- Workflow consistency.
-- Input validation.
-- Error handling.
-- Data consistency.
-- Navigation and usability.
-- Defect severity and business impact.
+| Quality Dimension | Assessment Focus |
+|---|---|
+| Functional Correctness | Expected behavior across critical workflows |
+| Workflow Consistency | Consistency between related application operations |
+| Input Validation | Handling of valid, invalid and incomplete inputs |
+| Error Handling | Clarity and consistency of error feedback |
+| Data Consistency | Accuracy of displayed product and cart information |
+| Navigation | Application flow and usability |
+| Defect Management | Classification, documentation and traceability |
 
 ## 7. Risks and Limitations
 
 - The application is a public demo environment.
-- Backend implementation is not accessible.
-- Testing results may vary according to application changes.
-- Findings cannot automatically be generalized to production environments.
-- API and database behavior must be evaluated using separate testing environments.
+- Backend implementation and database infrastructure are not included in the assessment scope.
+- The documentation describes proposed testing scenarios rather than observed application behavior.
+- No verified defect findings or execution metrics are claimed.
+- Findings from a demo application cannot automatically be generalized to production environments.
+- API and database behavior require separate assessment approaches.
 
-## 8. Recommendations
+## 8. Quality Improvement Considerations
 
-Recommendations will be prioritized according to verified findings.
-
-Potential improvement areas include:
+The following areas are identified as potential subjects for quality analysis:
 
 - Strengthening input validation.
-- Improving error messages.
+- Improving error messages and user feedback.
 - Ensuring consistent product and cart information.
-- Validating checkout workflow integrity.
-- Improving accessibility and usability.
-- Expanding regression coverage.
+- Maintaining checkout workflow integrity.
+- Considering accessibility and usability requirements.
+- Defining appropriate regression coverage.
 
-These are assessment areas, not confirmed defects.
+These considerations represent potential assessment areas, not confirmed application defects.
 
-## 9. Final Assessment
+## 9. Overall Assessment
 
-**Overall QA Status:** Pending Execution.
+This portfolio demonstrates a structured QA approach through test planning, functional test design, requirements traceability, defect management, and quality assessment criteria.
 
-A final quality assessment will be issued once:
+The documentation provides a foundation for evaluating application quality through established testing methodologies and professional reporting practices.
 
-- Planned test cases have been executed.
-- Failed cases have been investigated.
-- Defects have been classified.
-- Evidence has been reviewed.
-- Outstanding risks have been documented.
+No executed test results, verified application defects, or production readiness conclusions are claimed.
 
-No production readiness conclusion is made from this demo assessment.
+## 10. Portfolio Deliverables
 
-## 10. Deliverables
-
-- Test Plan.
-- Test Cases and Traceability Matrix.
-- Bug Reports.
-- API Testing Collection.
-- Test Execution Evidence.
-- Final QA Report.
+- Test Plan and Testing Strategy.
+- Test Cases and Requirements Traceability Matrix.
+- Bug Reports and Defect Management Framework.
+- API Testing Collection and Configuration.
+- API Testing Documentation.
+- QA Quality Assessment Framework.
 
 ---
 
