@@ -1,43 +1,78 @@
-# API Test Execution Report
+# API Testing Documentation
 
-**Collection:** QA API Testing - JSONPlaceholder (v2.0)  
-**Environment:** QA - JSONPlaceholder  
-**Execution date:** Pending  
-**Postman version:** Record at execution  
-**Executed by:** Mariana Camps  
-**Status:** Not executed / pending evidence
+**Collection:** QA API Testing - JSONPlaceholder (v2.0)
 
-## Execution summary
+**Environment:** QA - JSONPlaceholder
 
-| Metric | Result |
-|---|---:|
-| Total requests | 7 |
-| Passed requests | Pending |
-| Failed requests | Pending |
-| Blocked requests | Pending |
-| Not executed | 7 |
+## Overview
 
-## Request-level results
+This document describes the API testing collection designed to demonstrate REST API testing concepts, request configuration, automated assertions, and response validation using Postman.
 
-| Request | Expected behavior | Actual status / result | Test result | Evidence / notes |
-|---|---|---|---|---|
-| GET all posts | 200; JSON array with expected fields | Pending | Not executed | |
-| GET post by ID | 200; requested ID and fields returned | Pending | Not executed | |
-| POST create | 201; response echoes submitted fields | Pending | Not executed | Mock response; no persistence |
-| PUT replace | 200; response echoes replacement fields | Pending | Not executed | Mock response; no persistence |
-| DELETE | Successful status (200, 202 or 204) | Pending | Not executed | Mock response; no persistence |
-| GET unmatched user filter | 200; empty array | Pending | Not executed | |
-| GET non-existing post | 404 expected | Pending | Not executed | Verify actual service contract |
+The collection uses JSONPlaceholder, a public mock REST API.
 
-## Defects and observations
+## Testing Scope
 
-Record confirmed deviations only. Include request name, timestamp, response status, relevant response excerpt, reproduction details, and severity / priority where applicable.
+The collection includes the following scenarios:
+
+| Method | Scenario | Expected Status |
+|---|---|---:|
+| GET | Retrieve all posts | 200 |
+| GET | Retrieve a post by ID | 200 |
+| POST | Create a post | 201 |
+| PUT | Update a post | 200 |
+| DELETE | Delete a post | 200, 202 or 204 |
+| GET | Filter posts using a non-existing user ID | 200 |
+| GET | Retrieve a non-existing post | 404 |
+
+Expected status codes are defined as test assertions and should be interpreted according to the demo API contract.
+
+## Automated Validation
+
+The collection includes JavaScript assertions designed to validate:
+
+- HTTP response status codes.
+- Response content type.
+- JSON response structure.
+- Required properties and data types.
+- Resource identifier consistency.
+- Expected response values.
+- Empty and non-empty response collections.
+- Response-time thresholds.
+
+## Environment Configuration
+
+The collection uses configurable variables to support reusable requests.
+
+| Variable | Description |
+|---|---|
+| `baseUrl` | API base URL |
+| `postId` | Existing post identifier |
+| `nonExistingUserId` | Identifier used for negative filtering |
+| `nonExistingPostId` | Identifier for a non-existing resource |
+| `maxResponseTimeMs` | Maximum response-time threshold |
+
+## API Endpoints
+
+**Base URL:** https://jsonplaceholder.typicode.com
+
+**Resource:** `/posts`
+
+The collection covers standard REST operations using GET, POST, PUT, and DELETE methods.
+
+## Testing Approach
+
+The collection was designed to demonstrate:
+
+- Positive and negative testing scenarios.
+- HTTP response validation.
+- Data structure and type validation.
+- Request and environment variable management.
+- Automated assertions using Postman scripts.
 
 ## Limitations
-- JSONPlaceholder simulates write operations; changes are not persisted.
-- Response-time checks are affected by network conditions.
-- The non-existing-resource response must be confirmed during execution.
-- This report must be completed with actual Postman run results; no results are pre-populated.
 
-## Conclusion
-Pending execution. No quality conclusion is made until the collection has been run and results reviewed.
+JSONPlaceholder is a mock REST API.
+
+POST, PUT, and DELETE operations simulate successful write operations but do not persist changes to the underlying database.
+
+Response-time assertions represent basic threshold checks and are
