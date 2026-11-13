@@ -1,20 +1,22 @@
-
 # Bug Reports & Defect Management
 
 **Project:** QA Engineering Portfolio  
 **Author:** Mariana Camps  
 **Application:** SauceDemo  
-**Document Version:** 1.0
+**Document Version:** 1.1  
+**Document Status:** Portfolio Demonstration
 
 ---
 
 ## 1. Purpose
 
-This document defines the defect reporting and tracking approach used throughout the QA testing process.
+This document defines the defect reporting standards and management methodology demonstrated throughout this QA portfolio.
 
-The objective is to ensure that identified issues are documented consistently, are reproducible, and provide sufficient information for investigation and resolution.
+The objective is to establish a consistent approach to documenting potential software defects, supporting reproducibility, clear communication, prioritization, and traceability.
 
 ## 2. Bug Report Template
+
+The following template defines the standard information required for structured defect documentation.
 
 | Field | Description |
 |---|---|
@@ -25,13 +27,15 @@ The objective is to ensure that identified issues are documented consistently, a
 | Preconditions | Required initial state |
 | Steps to Reproduce | Detailed reproduction instructions |
 | Expected Result | Expected application behavior |
-| Actual Result | Observed application behavior |
+| Actual Result | Observed behavior, when verified |
 | Severity | Impact of the defect |
 | Priority | Urgency of resolution |
 | Status | Current defect lifecycle state |
-| Evidence | Screenshots, logs or recordings |
+| Evidence | Supporting screenshots, logs or recordings |
 
 ## 3. Severity Classification
+
+Severity represents the impact a defect may have on application functionality and user experience.
 
 | Severity | Description |
 |---|---|
@@ -41,6 +45,8 @@ The objective is to ensure that identified issues are documented consistently, a
 | Low | Minor visual or usability issue |
 
 ## 4. Priority Classification
+
+Priority determines the urgency with which a defect should be addressed.
 
 | Priority | Description |
 |---|---|
@@ -53,7 +59,7 @@ Severity measures impact, while priority determines how urgently the issue shoul
 
 ## 5. Defect Lifecycle
 
-Typical defect lifecycle:
+The following lifecycle represents a typical defect management workflow:
 
 1. New
 2. Assigned
@@ -63,29 +69,34 @@ Typical defect lifecycle:
 6. Verified
 7. Closed
 
-Alternative outcomes:
+Alternative outcomes include:
+
 - Reopened
 - Rejected
 - Duplicate
 - Cannot Reproduce
 - Deferred
 
+The lifecycle may vary according to the team's workflow and defect management tool.
+
 ## 6. Defect Reporting Standards
 
-Every defect report should:
+A structured defect report should:
 
 - Have a clear and specific title.
 - Describe one issue per report.
 - Include reproducible steps.
 - Separate expected and actual results.
 - Include relevant environment details.
-- Use severity and priority consistently.
-- Include evidence whenever possible.
+- Apply severity and priority consistently.
+- Include supporting evidence when available.
 - Avoid assumptions about the technical root cause.
 
 ## 7. Illustrative Defect Examples
 
-The following examples are hypothetical and are included only to demonstrate defect documentation structure.
+The following examples are hypothetical and demonstrate how potential defects can be documented.
+
+They are not verified findings from an actual application test execution.
 
 ### Example BUG-DEMO-001
 
@@ -111,11 +122,11 @@ The following examples are hypothetical and are included only to demonstrate def
 
 The product price should remain consistent between inventory and cart.
 
-**Actual Result:**
+**Illustrative Actual Result:**
 
-Hypothetical scenario: the cart displays a different price.
+The cart displays a different price from the inventory.
 
-**Status:** Illustrative – Not a verified application defect.
+**Status:** Hypothetical example – Not a verified application defect.
 
 ### Example BUG-DEMO-002
 
@@ -139,15 +150,15 @@ Hypothetical scenario: the cart displays a different price.
 
 The application should clearly identify the missing required information.
 
-**Actual Result:**
+**Illustrative Actual Result:**
 
-Hypothetical scenario: validation feedback is unclear.
+Validation feedback is unclear.
 
-**Status:** Illustrative – Not a verified application defect.
+**Status:** Hypothetical example – Not a verified application defect.
 
 ## 8. Defect Metrics
 
-The following metrics may be used after actual test execution:
+The following metrics are commonly used to assess defect trends and quality:
 
 - Total defects identified.
 - Defects by severity.
@@ -156,22 +167,27 @@ The following metrics may be used after actual test execution:
 - Reopened defect rate.
 - Defect distribution by functional module.
 
-No actual defect metrics are reported until verified findings are available.
+These metrics require verified defect records and are presented here as quality management concepts, not actual project results.
 
 ## 9. Traceability
 
-Each confirmed defect should reference:
+A confirmed defect should be linked to relevant testing documentation whenever applicable:
 
 - Related test case ID.
 - Affected functional requirement.
-- Execution evidence.
-- Retest result.
+- Supporting evidence.
+- Retest result, when available.
+
+Traceability supports impact analysis, defect investigation, and quality reporting.
 
 ## 10. Conclusion
 
-A consistent defect management process improves communication between QA and development teams, supports prioritization, and provides traceability throughout the software testing lifecycle.
+A consistent defect management process improves communication between QA and development teams, supports prioritization, and provides traceability throughout the software quality lifecycle.
+
+This document demonstrates defect reporting practices, classification criteria, and lifecycle management through illustrative examples.
 
 ---
 
 **Author:** Mariana Camps  
-**QA Engineering Portfolio**
+**QA Engineering Portfolio**  
+**Manual Testing | Defect Management | Software Quality**
