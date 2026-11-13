@@ -1,95 +1,40 @@
+# Postman API Testing – JSONPlaceholder
 
-# Quality Assurance Engineering Portfolio
+## Overview
+A Postman collection demonstrating API test design and automated response validation against the JSONPlaceholder demo REST API.
 
-**Mariana Camps | QA Analyst | Manual & API Testing**
+## Coverage
+- GET all posts: status, JSON content type, array shape, required fields, data types, response time.
+- GET post by ID: status, ID consistency, required fields and data types.
+- POST: response status and request/response field consistency.
+- PUT: response status, resource ID and replacement-field consistency.
+- DELETE: successful HTTP status handling.
+- Negative data scenario: unmatched `userId` filter returns an empty collection.
+- Negative resource scenario: request for a non-existing post.
 
-A practical Quality Assurance portfolio demonstrating software testing methodologies, analytical thinking, defect management, API validation and quality documentation.
+## Files
+- `collections/jsonplaceholder.postman_collection.json`
+- `environments/jsonplaceholder.postman_environment.json`
+- `docs/execution-report.md`
 
-## Professional Profile
+## Import and run
+1. Open Postman.
+2. Select **Import** and import the collection JSON.
+3. Import the environment JSON.
+4. Select the `QA - JSONPlaceholder` environment.
+5. Run the collection using Collection Runner.
+6. Review each request's **Test Results** and export the run report if required.
 
-QA professional with experience in Manual Testing and API Testing, supported by an academic background in Systems Engineering.
+## Configuration
+`baseUrl` is stored in the environment. `postId`, `nonExistingUserId`, `nonExistingPostId`, and `maxResponseTimeMs` are collection variables and can be changed in the collection's Variables tab.
 
-My approach combines functional analysis, structured test design, defect investigation and technical validation to improve software quality and user experience.
+## Important service limitations
+JSONPlaceholder is a mock API. POST, PUT and DELETE responses simulate successful write operations but do not persist changes to the underlying data. A successful response therefore validates the mock response contract, not durable creation, update, or deletion.
 
-## Project Overview
+The non-existing-resource scenario expects HTTP 404. Verify the live response when executing the collection; if the service contract differs, record the observed behavior and update the assertion based on evidence rather than forcing a pass.
 
-This project presents a structured QA case study based on a demo e-commerce application.
-
-**Application Under Test:** [SauceDemo](https://www.saucedemo.com/)
-
-**Testing Focus:**
-- Functional Testing
-- Manual Testing
-- API Testing
-- Regression Testing
-- Exploratory Testing
-- Data Validation
-- Defect Management
-- Quality Assurance Reporting
-
-## Technical Toolkit
-
-| Category | Tools |
-|---|---|
-| Test Management | Jira |
-| API Testing | Postman |
-| Database Validation | SQL |
-| Browser Analysis | Chrome DevTools |
-| Accessibility | Lighthouse |
-| Automation | Selenium |
-| Version Control | Git & GitHub |
-| Data Analysis | Excel, Google Sheets |
-
-## QA Deliverables
-
-| Deliverable | Description |
-|---|---|
-| Test Strategy | Testing objectives, scope and approach |
-| Test Plan | Environment, methodology and criteria |
-| Test Cases | Functional and negative scenarios |
-| API Test Collection | Endpoint validation and response assertions |
-| Defect Reports | Structured issue documentation |
-| Regression Suite | Core functionality validation |
-| QA Report | Execution summary and quality assessment |
-
-## Testing Methodology
-
-- Risk-based testing
-- Equivalence partitioning
-- Boundary value analysis
-- Positive and negative testing
-- Exploratory testing
-- Functional and regression testing
-- API response validation
-
-## Repository Structure
-
-```text
-qa-testing-portfolio/
-├── README.md
-├── docs/
-│   ├── test-plan.md
-│   ├── test-cases.md
-│   ├── bug-reports.md
-│   └── qa-final-report.md
-├── api-testing/
-│   ├── collections/
-│   └── environments/
-├── sql/
-├── evidence/
-└── reports/
-```
-
-## Project Status
-
-In development.
-
-Documentation, test scenarios and execution evidence will be progressively added.
+## Scope and limitations
+This collection is an educational portfolio artifact. Response-time assertions use a configurable threshold and can vary with network conditions. They are not a performance benchmark or SLA test.
 
 ## Author
-
-**Mariana Camps**
-
-QA Testing | API Testing | AI Training & Evaluation
-
-La Plata, Argentina
+Mariana Camps | QA Testing | API Testing | AI Training & Evaluation
