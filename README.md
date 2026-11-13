@@ -1,40 +1,116 @@
-# Postman API Testing – JSONPlaceholder
+# Quality Assurance Engineering Portfolio
 
-## Overview
-A Postman collection demonstrating API test design and automated response validation against the JSONPlaceholder demo REST API.
+**Mariana Camps | QA Analyst | Manual & API Testing**
 
-## Coverage
-- GET all posts: status, JSON content type, array shape, required fields, data types, response time.
-- GET post by ID: status, ID consistency, required fields and data types.
-- POST: response status and request/response field consistency.
-- PUT: response status, resource ID and replacement-field consistency.
-- DELETE: successful HTTP status handling.
-- Negative data scenario: unmatched `userId` filter returns an empty collection.
-- Negative resource scenario: request for a non-existing post.
+A practical QA portfolio showcasing software testing strategy, test design, API validation, defect management, and quality reporting.
 
-## Files
-- `collections/jsonplaceholder.postman_collection.json`
-- `environments/jsonplaceholder.postman_environment.json`
-- `docs/execution-report.md`
+## Professional Profile
 
-## Import and run
-1. Open Postman.
-2. Select **Import** and import the collection JSON.
-3. Import the environment JSON.
-4. Select the `QA - JSONPlaceholder` environment.
-5. Run the collection using Collection Runner.
-6. Review each request's **Test Results** and export the run report if required.
+QA professional with experience in Manual Testing and API Testing, with an academic background in Systems Analysis and web development knowledge.
 
-## Configuration
-`baseUrl` is stored in the environment. `postId`, `nonExistingUserId`, `nonExistingPostId`, and `maxResponseTimeMs` are collection variables and can be changed in the collection's Variables tab.
+My approach combines analytical thinking, risk-based testing, structured test design, defect investigation, and technical validation to improve software quality and user experience.
 
-## Important service limitations
-JSONPlaceholder is a mock API. POST, PUT and DELETE responses simulate successful write operations but do not persist changes to the underlying data. A successful response therefore validates the mock response contract, not durable creation, update, or deletion.
+## Project Overview
 
-The non-existing-resource scenario expects HTTP 404. Verify the live response when executing the collection; if the service contract differs, record the observed behavior and update the assertion based on evidence rather than forcing a pass.
+This repository contains a QA case study using two demo services:
 
-## Scope and limitations
-This collection is an educational portfolio artifact. Response-time assertions use a configurable threshold and can vary with network conditions. They are not a performance benchmark or SLA test.
+- **Web application:** SauceDemo — functional and manual testing.
+- **REST API:** JSONPlaceholder — API testing and response validation with Postman.
+
+The two testing exercises are documented separately to demonstrate different QA approaches.
+
+## Testing Scope
+
+### Web Application Testing
+
+- Functional testing
+- Positive and negative scenarios
+- Exploratory testing
+- Risk-based test design
+- Test case documentation
+- Defect reporting
+- Requirements traceability
+
+### API Testing
+
+- GET, POST, PUT and DELETE requests
+- HTTP status code validation
+- Response structure and data type assertions
+- Positive and negative scenarios
+- Environment and collection variables
+- Response time checks
+
+## Technical Toolkit
+
+| Area | Tools |
+|---|---|
+| Test Management | Jira |
+| API Testing | Postman |
+| Database Validation | SQL |
+| Browser Analysis | Chrome DevTools |
+| Accessibility | Lighthouse |
+| Automation | Selenium |
+| Version Control | Git, GitHub |
+| Data Analysis | Excel, Google Sheets |
+
+## Repository Structure
+
+```text
+qa-testing-portfolio/
+│
+├── api-testing/
+│   ├── collections/
+│   │   └── jsonplaceholder.postman_collection.json
+│   ├── docs/
+│   │   └── execution-report.md
+│   ├── environments/
+│   │   └── jsonplaceholder.postman_environment.json
+│   └── README.md
+│
+├── docs/
+│   ├── test-plan.md
+│   ├── test-cases.md
+│   ├── bug-reports.md
+│   └── qa-final-report.md
+│
+└── README.md
+```
+
+## QA Documentation
+
+| Document | Purpose |
+|---|---|
+| Test Plan | Scope, strategy, risks and testing criteria |
+| Test Cases | Structured scenarios and traceability |
+| Bug Reports | Defect documentation and classification |
+| QA Final Report | Quality assessment and execution summary |
+| API Execution Report | API test execution results and observations |
+
+## Testing Methodology
+
+- Risk-based testing
+- Equivalence partitioning
+- Boundary value analysis
+- Positive and negative testing
+- Exploratory testing
+- Functional testing
+- API response validation
+- Defect lifecycle management
+
+## Project Status
+
+**Documentation and test design:** Prepared.
+
+**API collection:** Created; execution and result verification pending.
+
+**Web application testing:** Execution evidence and final assessment pending.
+
+Test results will be reported only after actual execution. Illustrative defect examples, where present, are explicitly identified as such.
 
 ## Author
-Mariana Camps | QA Testing | API Testing | AI Training & Evaluation
+
+**Mariana Camps**
+
+QA Analyst | Manual Testing | API Testing | AI Training & Evaluation
+
+La Plata, Argentina
