@@ -1,69 +1,95 @@
 
-# QA Testing Portfolio
+# Quality Assurance Engineering Portfolio
 
-**Manual Software Testing | Quality Assurance | Test Documentation**
+**Mariana Camps | QA Analyst | Manual & API Testing**
 
-## About this project
+A practical Quality Assurance portfolio demonstrating software testing methodologies, analytical thinking, defect management, API validation and quality documentation.
 
-This repository showcases practical Quality Assurance skills through structured manual testing of a demo e-commerce application.
+## Professional Profile
 
-**Application under test:** [SauceDemo](https://www.saucedemo.com/)
+QA professional with experience in Manual Testing and API Testing, supported by an academic background in Systems Engineering.
 
-## Project Objectives
+My approach combines functional analysis, structured test design, defect investigation and technical validation to improve software quality and user experience.
 
-- Design and execute manual test cases.
-- Validate functional requirements.
-- Identify and document software defects.
-- Perform positive and negative testing.
-- Evaluate user experience and application behavior.
-- Produce structured QA documentation.
+## Project Overview
 
-## Testing Scope
+This project presents a structured QA case study based on a demo e-commerce application.
 
-| Module | Testing focus |
+**Application Under Test:** [SauceDemo](https://www.saucedemo.com/)
+
+**Testing Focus:**
+- Functional Testing
+- Manual Testing
+- API Testing
+- Regression Testing
+- Exploratory Testing
+- Data Validation
+- Defect Management
+- Quality Assurance Reporting
+
+## Technical Toolkit
+
+| Category | Tools |
 |---|---|
-| Login | Authentication and validation |
-| Products | Product listing and sorting |
-| Shopping Cart | Add and remove products |
-| Checkout | Form validation and purchase flow |
-| Navigation | Page navigation and usability |
+| Test Management | Jira |
+| API Testing | Postman |
+| Database Validation | SQL |
+| Browser Analysis | Chrome DevTools |
+| Accessibility | Lighthouse |
+| Automation | Selenium |
+| Version Control | Git & GitHub |
+| Data Analysis | Excel, Google Sheets |
+
+## QA Deliverables
+
+| Deliverable | Description |
+|---|---|
+| Test Strategy | Testing objectives, scope and approach |
+| Test Plan | Environment, methodology and criteria |
+| Test Cases | Functional and negative scenarios |
+| API Test Collection | Endpoint validation and response assertions |
+| Defect Reports | Structured issue documentation |
+| Regression Suite | Core functionality validation |
+| QA Report | Execution summary and quality assessment |
+
+## Testing Methodology
+
+- Risk-based testing
+- Equivalence partitioning
+- Boundary value analysis
+- Positive and negative testing
+- Exploratory testing
+- Functional and regression testing
+- API response validation
 
 ## Repository Structure
 
 ```text
-docs/
-  test-plan.md
-  test-cases.md
-  bug-reports.md
-  qa-final-report.md
-evidence/
-  README.md
+qa-testing-portfolio/
+├── README.md
+├── docs/
+│   ├── test-plan.md
+│   ├── test-cases.md
+│   ├── bug-reports.md
+│   └── qa-final-report.md
+├── api-testing/
+│   ├── collections/
+│   └── environments/
+├── sql/
+├── evidence/
+└── reports/
 ```
-
-## Testing Approach
-
-- Manual Functional Testing
-- Positive Testing
-- Negative Testing
-- Boundary Testing
-- Exploratory Testing
-- Regression Testing
-
-## Tools
-
-- GitHub
-- Google Chrome DevTools
-- Markdown
-- Manual Testing Techniques
 
 ## Project Status
 
-In progress — test planning, execution and documentation.
+In development.
+
+Documentation, test scenarios and execution evidence will be progressively added.
 
 ## Author
 
 **Mariana Camps**
 
-QA Testing | AI Training & Evaluation
+QA Testing | API Testing | AI Training & Evaluation
 
 La Plata, Argentina
