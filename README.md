@@ -1,7 +1,7 @@
 
 # Quality Assurance Engineering Portfolio
 
-**Mariana Camps | QA Analyst | Manual & API Testing**
+**Mariana Camps | QA Analyst | Manual Testing | API Testing | AI Quality**
 
 A QA portfolio showcasing software testing strategy, test design, API validation, defect management, and quality reporting through structured demonstration projects.
 
