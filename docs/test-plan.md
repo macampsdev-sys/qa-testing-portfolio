@@ -1,120 +1,208 @@
 
 # Test Plan – SauceDemo E-commerce Application
 
-**Project:** QA Testing Portfolio  
+**Project:** QA Engineering Portfolio  
 **Author:** Mariana Camps  
-**Testing Type:** Manual Software Testing  
-**Application:** https://www.saucedemo.com/  
+**Testing Approach:** Manual Functional Testing  
+**Application Under Test:** https://www.saucedemo.com/  
+**Document Version:** 1.1  
 **Status:** Planned
 
 ---
 
 ## 1. Introduction
 
-This test plan defines the strategy, scope, objectives and testing activities for the manual evaluation of the SauceDemo e-commerce application.
+This document defines the testing strategy, scope, resources, methodology and execution criteria for the Quality Assurance assessment of the SauceDemo e-commerce application.
 
-The purpose is to assess the application's functionality, identify potential defects and verify that its main user flows behave as expected.
+The objective is to evaluate critical user workflows, identify functional inconsistencies, assess application behavior and document findings through a structured QA process.
 
 ## 2. Testing Objectives
 
-- Verify user authentication functionality.
-- Validate product listing and sorting.
-- Test shopping cart operations.
-- Verify checkout functionality.
-- Identify functional inconsistencies.
-- Evaluate error handling and user feedback.
-- Document defects using structured bug reports.
+- Validate core business workflows.
+- Verify authentication and authorization behavior at the application level.
+- Assess product inventory and sorting functionality.
+- Validate shopping cart operations.
+- Verify checkout workflows and input validation.
+- Identify functional, usability and consistency issues.
+- Assess error handling and user feedback.
+- Maintain traceability between requirements, test cases and defects.
+- Provide an objective assessment of application quality.
 
-## 3. Scope of Testing
+## 3. Scope
 
-### In Scope
+### 3.1 In Scope
 
-| Module | Description |
-|---|---|
-| Login | Authentication and input validation |
-| Inventory | Product display and sorting |
-| Shopping Cart | Adding and removing products |
-| Checkout | Customer information validation |
-| Order Summary | Price and item verification |
-| Navigation | Navigation between application sections |
+| Module | Testing Coverage | Priority |
+|---|---|---|
+| Authentication | Login, invalid credentials, locked users | High |
+| Inventory | Product information, sorting and display | High |
+| Shopping Cart | Add, remove and item consistency | High |
+| Checkout | Input validation and purchase workflow | High |
+| Order Summary | Item details, quantities and totals | High |
+| Navigation | Page transitions and application usability | Medium |
 
-### Out of Scope
+### 3.2 Out of Scope
 
-- Backend source code testing.
-- Database security testing.
+- Backend source code validation.
+- Database-level integrity testing.
 - Load and stress testing.
-- Payment gateway integration.
-- Production environment testing.
+- Real payment processing.
+- Production security penetration testing.
+- Third-party payment integrations.
 
-## 4. Testing Methodology
+## 4. Testing Strategy
 
-The following manual testing techniques will be applied:
+The project follows a risk-based manual testing approach.
 
-- Functional Testing
-- Positive Testing
-- Negative Testing
-- Boundary Value Analysis
-- Exploratory Testing
-- Regression Testing
-- Usability Testing
+Testing activities will prioritize critical user journeys and functionality that directly impacts the shopping experience.
 
-## 5. Test Environment
+### Testing Types
+
+| Testing Type | Purpose |
+|---|---|
+| Functional Testing | Verify expected application behavior |
+| Positive Testing | Validate successful user interactions |
+| Negative Testing | Evaluate invalid inputs and error handling |
+| Boundary Value Analysis | Assess input limits and edge conditions |
+| Exploratory Testing | Identify unexpected behavior |
+| Regression Testing | Verify existing functionality after changes |
+| Usability Testing | Assess navigation and user experience |
+
+## 5. Risk Assessment
+
+| Risk | Impact | Mitigation |
+|---|---|---|
+| Application availability issues | High | Record environment interruptions |
+| Demo environment changes | Medium | Document execution date and conditions |
+| Inconsistent application behavior | High | Repeat tests and preserve evidence |
+| Limited backend access | Medium | Restrict conclusions to observable behavior |
+| Incomplete test coverage | High | Maintain test case traceability |
+
+## 6. Test Environment
 
 | Component | Configuration |
 |---|---|
 | Application | SauceDemo |
-| Browser | Google Chrome |
+| Environment | Public demo |
 | Operating System | Windows |
+| Browser | Google Chrome |
 | Testing Approach | Manual |
-| Test Management | GitHub |
 | Documentation | Markdown |
+| Version Control | GitHub |
 
-## 6. Entry Criteria
+Exact browser and operating system versions will be recorded during test execution.
 
-Testing can begin when:
+## 7. Test Data Management
+
+Test data will use publicly provided demo accounts and non-sensitive sample information.
+
+Credentials will be documented separately from production or personal credentials.
+
+Test data must not contain real personal or financial information.
+
+## 8. Entry Criteria
+
+Testing may begin when:
 
 - The application is accessible.
-- The test environment is available.
-- Test scenarios have been defined.
+- The testing environment is available.
+- Test scenarios have been reviewed.
 - Valid test credentials are available.
+- Expected results have been defined.
 
-## 7. Exit Criteria
+## 9. Exit Criteria
 
-Testing will be considered complete when:
+Testing may be considered complete when:
 
-- All planned test cases have been executed.
-- Results have been documented.
-- Identified defects have been reported.
-- Critical issues have been reviewed.
+- Planned test cases have been executed or formally marked as blocked.
+- Actual results have been documented.
+- Identified defects have been recorded.
+- Critical findings have been reviewed.
+- Relevant evidence has been collected.
 - A final QA report has been prepared.
 
-## 8. Defect Severity Classification
+## 10. Defect Management
 
-| Severity | Description |
+All identified defects must include:
+
+- Unique defect ID.
+- Summary and description.
+- Preconditions.
+- Steps to reproduce.
+- Expected result.
+- Actual result.
+- Severity.
+- Priority.
+- Execution environment.
+- Supporting evidence.
+
+### Severity Classification
+
+| Severity | Definition |
 |---|---|
-| Critical | Blocks a major application workflow |
-| High | Major functionality is affected |
-| Medium | Functionality works incorrectly with a workaround |
-| Low | Minor visual or usability issue |
+| Critical | Causes a critical workflow failure or major system impact |
+| High | Significantly affects core functionality |
+| Medium | Causes functional issues with a possible workaround |
+| Low | Minor visual, usability or cosmetic issue |
 
-## 9. Deliverables
+### Priority Classification
 
-- Test Plan
-- Test Cases
-- Bug Reports
-- Test Execution Results
-- QA Final Report
+| Priority | Definition |
+|---|---|
+| P1 – Critical | Requires immediate attention |
+| P2 – High | Should be addressed in the next development cycle |
+| P3 – Medium | Should be addressed when resources allow |
+| P4 – Low | Minor improvement or cosmetic correction |
 
-## 10. Risks and Limitations
+Severity measures impact. Priority determines urgency.
 
-- Application behavior may change over time.
-- Testing is limited to the publicly available demo environment.
-- Results represent the tested environment and execution date.
-- No backend or source code access is assumed.
+## 11. Test Execution Management
 
----
+Each test case will be assigned an execution status:
 
-**Document Status:** Ready for test execution.
+- NOT EXECUTED
+- PASSED
+- FAILED
+- BLOCKED
+- NOT APPLICABLE
+
+Failed test cases must be linked to their corresponding defect reports whenever applicable.
+
+Execution evidence will be stored in the repository.
+
+## 12. Suspension and Resumption Criteria
+
+Testing may be suspended when:
+
+- The application becomes unavailable.
+- A critical issue prevents further execution.
+- The testing environment becomes unreliable.
+- Test data is no longer valid.
+
+Testing may resume once the blocking condition has been resolved and the environment has been validated.
+
+## 13. Deliverables
+
+- Test Strategy and Test Plan.
+- Test Case Documentation.
+- Test Execution Results.
+- Defect Reports.
+- API Testing Collection.
+- SQL Validation Scripts.
+- Evidence and Supporting Documentation.
+- Final QA Assessment Report.
+
+## 14. Limitations
+
+- Testing is limited to the publicly accessible demo environment.
+- No access to application source code or backend infrastructure is assumed.
+- Results represent the observed behavior during the documented execution period.
+- Findings must not be generalized to production environments.
+
+## 15. Approval and Document Status
+
+**Document Status:** Planned – Pending Test Execution.
 
 **Author:** Mariana Camps  
-**Role:** QA Testing Portfolio
+**Professional Focus:** Manual QA | API Testing | Software Quality
+
